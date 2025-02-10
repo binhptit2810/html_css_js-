@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đặt Hàng</title>
+</head>
+<body>
+    <h2>Form Đặt Hàng</h2>
+    <form>
+        <div>
+            <label for="product">Chọn sản phẩm:</label>
+            <select id="product" name="product" required>
+                <option value="product1">Sản phẩm 1</option>
+                <option value="product2">Sản phẩm 2</option>
+                <option value="product3">Sản phẩm 3</option>
+            </select><br><br>
+        </div>
+        
+        <div>
+            <label for="quantity">Số lượng:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+        </div>
+        
+        <div>
+            <label for="address">Địa chỉ giao hàng:</label>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+        </div>     
+        <div>
+            <button type="submit">Đặt hàng</button>
+        </div>
+    </form>
+</body>
+</html>

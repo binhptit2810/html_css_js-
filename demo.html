@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Biểu Mẫu</h1>
+    <!--type
+    id - optional
+    placeholder - optional(tùy chọn)
+    name
+    query string - ?key=value&....keyN=valueN
+-->
+    <div>
+        <form action="http://www.rikkeisever.com" method="post">
+            <label for="username">
+                username :
+            </label>
+            <input type="text" 
+            name="username" 
+            id="username" 
+            placeholder="Ex : Mc95"/>
+    </div>
+    <div>
+        <label for="nickname">
+            Nickname :
+        </label>
+        <input type="text" 
+        name="nickname" 
+        id="nickname" 
+        placeholder="Khăn Giấy Ướt"/>
+    </div>
+    <div>
+        <label for="password">
+            password :
+        </label>
+        <input type="password" 
+        name="password" 
+        id="password" 
+        placeholder="binh2810"/>
+    </div>
+    <div>
+        <label for="email">
+            Email :
+        </label>
+        <input type="email" 
+        name="email" 
+        id="email" 
+        placeholder="@gmail.com"/>
+    </div>
+    <div>
+        <label for="phonenumber">
+            phonenumber :
+        </label>
+        <input type="phonenumber" 
+        name="phonenumber" 
+        id="phonenumber" 
+        placeholder="2384582388"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        required/>
+    </div>
+    <div>
+        <label for="web">
+            Website :
+        </label>
+        <input type="url" 
+        name="web" 
+        id="web" 
+        placeholder="facebook.com"/>
+    </div>
+    <div>
+        <label for="search">
+            Search :
+        </label>
+        <input type="search" 
+        name="search" 
+        id="search" 
+        placeholder="facebook.com"/>
+    </div>
+    <div>
+        <label for="age">
+            Age :
+        </label>
+        <input type="range" 
+        name="age" 
+        id="age" 
+        min="0"
+        max="10"
+        step="3"
+        placeholder="facebook.com"/>
+    </div>
+    <div>
+        <label for="birthday">
+            birthday :
+        </label>
+        <input type="datetime-local" 
+        name="birthday" 
+        id="birthday" 
+        placeholder=""/>
+    </div>
+    <input type="submit" value="Gửi thông tin ">
+    <input type="button" value="quay lại ">
+    <input type="reset" value="reset ">
+    <div>
+        <label for="male">Nam</label>
+        <label for="female">Nữ</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <input type="radio" id="female" name="gender" value="female">
+    </div>
+    <div>
+        <label for="readbook">Đọc Sách</label>
+        <label for="music">Nghe Nhạc</label>
+        <input type="checkbox" id="readbook" name="hobby" value="readbook">
+        <input type="checkbox" id="music" name="hobby" value="music">
+    </div>
+    <div>
+        <select name="city" multiple>
+            <option value="Hà Nội">Hà Nội </option>
+            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+            <option value="Đà Nẵng">Đà Nẵng</option>
+        </select>
+    </div>
+    </form>
+</body>
+</html>
