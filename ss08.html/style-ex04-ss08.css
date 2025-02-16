@@ -1,0 +1,63 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 80%;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 2px solid red;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.icon-container img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.text {
+    margin-left: 15px;
+}
+
+.text h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.text p {
+    font-size: 14px;
+    color: #666;
+}
