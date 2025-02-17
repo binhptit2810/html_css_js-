@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+    padding: 10px; 
+    border: 1px solid black;
+    /* width: fit-content;  */
+    margin: auto;
+    width: 450px;
+    
+}
+.container .child {
+    background-color: #4c98da;
+    width: calc(25% - 5px); 
+    height: 60px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 2px;
+}
+.container .child:nth-child(5) {
+    width: calc(51% - 10px); 
+}

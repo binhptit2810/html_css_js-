@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5e5e5;
+    margin: 0;
+    border: 2px solid black;
+    width: 600px;
+    height: 400px;
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    background-color: #1E88E5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}

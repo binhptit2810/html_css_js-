@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.container .child {
+    background-color: #4fcc70;
+    width: calc(25% - 20px);
+    height: 60px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 5px; 
+}
