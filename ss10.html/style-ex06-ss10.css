@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    color: #2d2d2d;
+}
+.news-slider {
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.news-item {
+    position: relative;
+}
+.news-image {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.news-category {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    border: 2px solid white;
+
+}
+
+.news-content p, .news-content h1 {
+    margin: 0;
+}
+
+.news-meta {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.news-description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.pagination {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #fff;
+}
+
+.pagination .page {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.pagination .page.active {
+    background: black;
+    color: white;
+}
+
+.pagination button {
+    width: 40px;
+    height: 40px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.pagination button i {
+    font-size: 18px; /* Hiển thị biểu tượng mũi tên */
+}
+
+.pagination button:hover {
+    background: #333;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

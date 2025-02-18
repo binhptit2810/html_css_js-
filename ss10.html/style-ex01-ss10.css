@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: hsla(0, 0%, 71%, 1S);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: hsla(0, 0%,90%, 1);
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    padding-left: 30px;
+    text-align: center;
+    align-items: center;
+    color: #8d8d8d;
+}
+.font{
+    font-family: "Dancing Script", serif !important;
+    /* font-optical-sizing: auto; */
+    font-weight: 900;
+    font-size: 25px;
+    /* font-style: normal;
+    text-decoration: none; */
+    color: black !important;
+}
+.container .home{
+    color: black;
+}
+.container-text{
+    font-family: Arial, Helvetica, sans-serif !important;
+    background-color: #8d8d8d;
+}
