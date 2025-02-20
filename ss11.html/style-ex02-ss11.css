@@ -68,25 +68,25 @@
         gap: 10px;
     }
     .item1{
-        width: calc(100% - 10px);
+        width: calc(100% - 10px) !important;
     }
     .item2{
-        width: calc(100% - 10px);
+        width: calc(100% - 10px) !important;
     }
     .item3{
-        width: calc(100% - 10px);
+        width: calc(100% - 10px) !important;
     }
     .item4{
-        width: calc(100% - 10px);
+        width: calc(100% - 10px) !important;
     }
     .item5{
-        width: calc(100% - 10px);
+        width: calc(100% - 10px) !important;
     }
     .item6{
-        width: calc(100% - 10px);
+        width: calc(100% - 10px) !important;
     }
     .item7{
-        width: calc(100% - 10px);
+        width: calc(100% - 10px) !important;
     }
     
 }
