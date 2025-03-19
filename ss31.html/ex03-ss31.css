@@ -1,0 +1,29 @@
+.container{
+    border: 1px solid black;
+    width: 450px;
+    height: 250px;
+}
+.container .child{
+    display: flex;
+    flex-direction: row;
+    gap: 15px
+
+}
+#btn-green{
+    width: 100px;
+    height: 110px;
+    background-color: #248000;
+    border: 1px solid black;
+}
+#btn-red{
+    width: 100px;
+    height: 110px;
+    background-color: #f30219;
+    border: 1px solid black;
+}
+#btn-pur{
+    width: 100px;
+    height: 110px;
+    background-color:#e883ee;
+    border: 1px solid black;
+}

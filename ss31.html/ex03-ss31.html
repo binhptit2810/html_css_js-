@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex03-ss31.css">
+</head>
+<body>
+    <div class="container">
+        <p>change background-color</p>
+        <p>Mouse click</p><br>
+        <div class="child">
+            <div id ="btn-green" onclick="changeColor ('#248000')">Xanh</div>
+            <div id = "btn-red" onclick="changeColor  ('#f30219')">đỏ</div>
+            <div id = "btn-pur" onclick="changeColor  ('#e883ee')">tím</div>
+        </div>
+    </div>
+    <script>
+        function changeColor(color){
+            document.body.style.backgroundColor = color
+        }
+    </script>
+    
+</body>
+</html>
