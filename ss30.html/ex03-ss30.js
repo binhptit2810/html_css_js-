@@ -124,11 +124,11 @@ while (input !== 5) {
             }
             break;
         case 5:
-            console.log("Cảm ơn bạn đã sử dụng chương trình!");
-            break;
+            console.log("Cảm ơn bạn đã sử dụng chương trình!")
+            break
 
         default:
-            console.log("Lựa chọn không hợp lệ, vui lòng thử lại");
+            console.log("Lựa chọn không hợp lệ, vui lòng thử lại")
             break;
     }
 }
