@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Bấm vào tôi</button>
+    <p id="result">Số lần bấm: 0</p>
+    <script>
+        let count = 0;
+        let btn = document.getElementById("btn")
+        let result = document.getElementById("result")
+        btn.addEventListener("click", function () {
+            count++;
+            result.innerText = "Số lần bấm: " + count;
+        });
+    </script>
+
+</body>
+
+</html>
