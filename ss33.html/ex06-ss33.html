@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex06-ss33.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ứng dụng Thời tiết</h1>
+        <div class="search-bar">
+            <input type="text" id="cityInput" placeholder="hồ chí minh">
+            <button onclick="searchWeather()">Tìm kiếm</button>
+        </div>
+        <div class="weather-card" id="weatherInfo">
+            <h2 id="city"></h2>
+            <div class="weather-details">
+                <div class="weather-main">
+                    <span id="weatherIcon"></span>
+                    <p id="temperature"></p>
+                </div>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
+            </div>
+        </div>
+    </div>
+    <script src="ex06-ss33.js"></script>
+</body>
+</html>
