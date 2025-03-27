@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+}
+.container {
+    width: 500px;
+    height: 200px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgb(134, 133, 133);
+}
+h1 {
+    font-size: 30px;
+}
+button {
+    background-color: #377cfe;
+    color: white;
+    width: 50px;
+    height: 33px;
+    border-radius: 5px;
+}
+input[type="text"]{
+    font-size: 20px;
+}
+.greeting {
+    font-size: 24px;
+}
+.change-name-btn {
+    background-color: #377cfe;
+    color: white;
+    width: 100px;
+    height: 33px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
