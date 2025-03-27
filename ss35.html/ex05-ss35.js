@@ -31,10 +31,10 @@ const itemStatusInput = document.getElementById('itemStatus');
 const nameError = document.getElementById('nameError');
 const descriptionError = document.getElementById('descriptionError');
 const searchInput = document.getElementById('searchInput');
-const statusFilter = document.getElementById('statusFilter');
+
 displayItems();
 searchInput.addEventListener('input', filterAndDisplayItems);
-statusFilter.addEventListener('change', filterAndDisplayItems);
+
 addItemBtn.addEventListener('click', () => {
     editId = null;
     modalTitle.textContent = 'Thêm mục lục';
@@ -42,8 +42,10 @@ addItemBtn.addEventListener('click', () => {
     clearErrors();
     itemModal.style.display = 'flex';
 });
+
 closeModal.addEventListener('click', closeModalHandler);
 cancelBtn.addEventListener('click', closeModalHandler);
+
 function closeModalHandler() {
     itemModal.style.display = 'none';
     itemForm.reset();
@@ -85,6 +87,18 @@ itemForm.addEventListener('submit', (e) => {
         closeModalHandler();
     }
 });
+
+function filterAndDisplayItems() {
+    const searchText = searchInput.value.trim().toLowerCase();
+    let filteredItems = items;
+    if (searchText) {
+        filteredItems = filteredItems.filter(item => 
+            item.name.toLowerCase().includes(searchText)
+        );
+    }
+    displayItems(filteredItems);
+}
+
 function displayItems(filteredItems = items) {
     itemList.innerHTML = '';
     filteredItems.forEach((item, index) => {
@@ -103,6 +117,7 @@ function displayItems(filteredItems = items) {
         itemList.appendChild(row);
     });
 }
+
 function editItem(id) {
     editId = id;
     const item = items.find(item => item.id === id);
@@ -114,6 +129,7 @@ function editItem(id) {
         itemModal.style.display = 'flex';
     }
 }
+
 function deleteItem(id) {
     if (confirm('Bạn có chắc chắn muốn xóa mục lục này?')) {
         items = items.filter(item => item.id !== id);
@@ -121,6 +137,7 @@ function deleteItem(id) {
         filterAndDisplayItems();
     }
 }
+
 function clearErrors() {
     nameError.textContent = '';
     descriptionError.textContent = '';
